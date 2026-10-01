@@ -2,12 +2,10 @@
 
 Experimental Particle Physics
 
-I am a graduate student working with the CMS experiment at CERN.
+I am a graduate student from University of Virginia working with the CMS experiment at CERN.
 
 ## Research
 
 My research focuses on:
-- Beyond the Standard Model physics
 - Long-lived particle searches
-- CMS detector development
-- HL-LHC MIP Timing Detector
+- Barrel Timing Layer of MIP Timing Detector for CMS

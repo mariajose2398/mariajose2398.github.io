@@ -13,12 +13,15 @@ My research interests lie in experimental high energy physics, especially in sea
 For my PhD thesis, I work on a novel search for dark matter with displaced lepton jets and the assembly and commissioning of the Barrel Timing Layer of the MIP Timing Detector. More details about my work can be found on the [Research]({{ "/research/" | relative_url }}) page.
 
 ## Latest Posts
-
 {% for post in site.posts %}
-### [{{ post.title }}]({{ post.url | relative_url }})
+<div class="post-box">
 
-*{{ post.date | date: "%B %-d, %Y" }}*
+<h3>
+  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+</h3>
 
 {{ post.excerpt }}
 
+</div>
 {% endfor %}

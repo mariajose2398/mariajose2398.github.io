@@ -1,194 +1,100 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-
-    font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Helvetica,
-        Arial,
-        sans-serif;
-
-    color: #202124;
-    background: #fafafa;
-
-    line-height: 1.7;
-    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #222;
+    background: #ffffff;
 }
 
+.site {
+    min-height: 100vh;
+}
 
-/* =========================
-   Header
-   ========================= */
+/* Left sidebar */
 
 header {
-    max-width: 1100px;
+    position: fixed;
+    left: 0;
+    top: 0;
 
-    margin: 0 auto;
+    width: 260px;
+    height: 100vh;
 
-    padding: 25px 30px;
+    padding: 45px 30px;
+    box-sizing: border-box;
 
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
+    background: #f1eee8;
 }
 
+/* Name */
 
-header > a {
-    color: #202124;
+.site-title {
+    margin-bottom: 45px;
+}
 
+.site-title a {
+    color: #222;
     text-decoration: none;
 
-    font-size: 1.25rem;
-
+    font-size: 1.7rem;
     font-weight: 600;
 }
 
+/* Navigation */
 
 nav {
     display: flex;
-
-    gap: 30px;
+    flex-direction: column;
+    gap: 15px;
 }
-
 
 nav a {
-    color: #555;
-
+    color: #444;
     text-decoration: none;
-
     font-size: 1rem;
 }
-
 
 nav a:hover {
     color: #000;
 }
 
 
-/* =========================
-   Main content
-   ========================= */
+/* Main content */
 
 main {
+    margin-left: 260px;
+    padding: 55px 60px;
     max-width: 900px;
-
-    margin: 0 auto;
-
-    padding: 70px 30px;
 }
 
 
-main h1 {
-    font-size: 2.8rem;
-
-    margin-bottom: 30px;
-}
-
-
-main h2 {
-    margin-top: 70px;
-
-    font-size: 1.7rem;
-}
-
-
-main h3 {
-    margin-top: 35px;
-
-    font-size: 1.2rem;
-}
-
-
-main a {
-    color: #315f8c;
-
-    text-decoration: none;
-}
-
-
-main a:hover {
-    text-decoration: underline;
-}
-
-
-/* =========================
-   Footer
-   ========================= */
+/* Footer */
 
 footer {
-    max-width: 1100px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 
-    margin: 40px auto 0;
+    width: 220px;
+    padding: 20px 30px;
+    box-sizing: border-box;
 
-    padding: 25px 30px;
-
-    border-top: 1px solid #e5e5e5;
-
+    font-size: 0.75rem;
     color: #777;
-
-    font-size: 0.85rem;
 }
+
 footer a {
-    color: #777;
-
-    text-decoration: none;
-}
-
-
-footer a:hover {
-    color: #000;
-
-    text-decoration: underline;
-}
-
-
-/* =========================
-   Mobile
-   ========================= */
-
-@media (max-width: 700px) {
-
-    header {
-        padding: 20px;
-    }
-
-
-    nav {
-        gap: 15px;
-    }
-
-
-    nav a {
-        font-size: 0.85rem;
-    }
-
-
-    main {
-        padding: 50px 20px;
-    }
-
-
-    main h1 {
-        font-size: 2.3rem;
-    }
-
+    color: inherit;
 }
 .post-box {
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 12px 18px;
-    margin-bottom: 12px;
+    padding: 14px 20px;
+    margin-bottom: 14px;
     background: #fff;
 }
 
@@ -198,6 +104,7 @@ footer a:hover {
 }
 
 .post-box h3 a {
+    color: #2674a8
     text-decoration: none;
 }
 

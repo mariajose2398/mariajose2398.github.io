@@ -13,6 +13,5 @@ I took this photo in Chicago in 2023, when I was there for a test beam at Fermil
      alt="Chicago from 360 CHICAGO"
      style="width: 100%; height: auto;">
 
-This photograph has always been special to me—not just because of the view, but because it reminds me of that trip, the test beam, and one of those moments when physics and travel came together.
 
 *© Maria Jose, 2026*

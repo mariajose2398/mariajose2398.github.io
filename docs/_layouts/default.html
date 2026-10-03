@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {{ page.title }} | {{ site.title }}
+    </title>
+    <link rel="stylesheet"
+          href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+<div class="site">
+    <header>
+        <a href="{{ '/' | relative_url }}">
+            Maria Jose
+        </a>
+        <nav>
+            <a href="{{ '/research/' | relative_url }}">
+                Research
+            </a>
+            <a href="{{ '/tikz/' | relative_url }}">
+                TikZ
+            </a>
+            <a href="{{ '/photography/' | relative_url }}">
+                Photography
+            </a>
+        </nav>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        <p>
+            © {{ site.time | date: "%Y" }} Maria Jose
+        </p>
+    </footer>
+</div>
+</body>
+</html>

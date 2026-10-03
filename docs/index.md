@@ -3,19 +3,14 @@ layout: default
 title: Home
 ---
 
-# Welcome to my Website!
+# Welcome!
 
-I am Maria Jose, a graduate student at the University of Virginia working with the CMS experiment.
+I am a graduate student at the University of Virginia working under the supervision of Prof. Chris Neu.
 
-My research focuses on experimental high energy physics, with an emphasis on searches for physics beyond the Standard Model and detector development for the CMS HL-LHC upgrade.
+For my PhD thesis, I work on a novel search for dark matter with displaced lepton jets and the assembly and commissioning of the Barrel Timing Layer of the MIP Timing Detector. More details about my work can be found on the [Research]({{ "/research/" | relative_url }}) page.
 
-## Research
+My research interests lie in experimental high energy physics, especially in searches for physics beyond the Standard Model (BSM), detector building, testing and commissioning for the HL-LHC, and ultimately applying that expertise to building experiments for future colliders such as the FCC or a muon collider.
 
-My PhD research includes a search for self-interacting dark matter with displaced lepton jets and the development, assembly, testing, and commissioning of the CMS Barrel Timing Layer.
-
-I am interested in experimental particle physics, detector development, and future collider experiments.
-
-[Learn more about my research]({{ "/research/" | relative_url }})
 
 ## Latest Posts
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,11 @@
 
 <div class="site">
 
-    <header>
+    <!-- =========================
+         Left sidebar
+         ========================= -->
+
+    <header class="left-sidebar">
 
         <div class="site-title">
             <a href="{{ '/' | relative_url }}">
@@ -24,30 +29,90 @@
             </a>
         </div>
 
-        <nav>
-            <a href="{{ '/aboutme/' | relative_url }}">About</a>
-            <a href="{{ '/research/' | relative_url }}">Research</a>
-            <a href="{{ '/tikz/' | relative_url }}">TikZ</a>
-            <a href="{{ '/photography/' | relative_url }}">Photography</a>
+        <!-- Profile photo -->
+        <div class="profile-photo">
+            <span>Photo</span>
+        </div>
+
+        <!-- Main navigation -->
+        <nav class="main-nav">
+
+            <a href="{{ '/aboutme/' | relative_url }}">
+                About me
+            </a>
+
+            <a href="{{ '/research/' | relative_url }}">
+                Research
+            </a>
+
+            <a href="{{ '/teaching/' | relative_url }}">
+                Teaching
+            </a>
+
+            <a href="{{ '/talks/' | relative_url }}">
+                Talks
+            </a>
+
         </nav>
+
+        <!-- Bottom information -->
+        <div class="sidebar-bottom">
+
+            <div class="location">
+                Geneva, Switzerland
+            </div>
+
+            <div class="contact-links">
+
+                <a href="mailto:maria.jose@cern.ch">
+                    Email
+                </a>
+
+                <a href="https://github.com/mariajose2398">
+                    GitHub
+                </a>
+
+            </div>
+
+            <div class="copyright">
+                © {{ site.time | date: "%Y" }} Maria Jose
+            </div>
+
+        </div>
 
     </header>
 
+
+    <!-- =========================
+         Main content
+         ========================= -->
+
     <main>
+
         {{ content }}
+
     </main>
 
-    <footer>
-        <p>
-            © {{ site.time | date: "%Y" }} Maria Jose
-            ·
-            <a href="mailto:maria.jose@cern.ch">Email</a>
-            ·
-            <a href="https://github.com/mariajose2398">GitHub</a>
-            ·
-            CERN, Switzerland
-        </p>
-    </footer>
+
+    <!-- =========================
+         Right sidebar
+         ========================= -->
+
+    <aside class="right-sidebar">
+
+        <nav class="creative-nav">
+
+            <a href="{{ '/tikz/' | relative_url }}">
+                TikZ
+            </a>
+
+            <a href="{{ '/photography/' | relative_url }}">
+                Photography
+            </a>
+
+        </nav>
+
+    </aside>
 
 </div>
 

@@ -6,7 +6,7 @@ permalink: /tikz/cosmic_yz/
 categories: tikz
 ---
 
-I recently gave a status update on my SIDM analysis and showed how we veto cosmic muons in CMS detector.
+I recently gave a status update on my SIDM analysis and showed how we veto cosmic muons background.
 Here’s a little cartoon I drew to explain what happens when a cosmic muon passes through the detector.
 
 A cosmic muon often enters the detector from above and travels straight through, where it can be reconstructed as two tracks: one in the top half and one in the bottom half.

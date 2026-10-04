@@ -1,0 +1,93 @@
+---
+layout: post
+title: "How Do Cosmic Muons Pass Through CMS?"
+date: 2026-10-04 
+permalink: /tikz/cosmic_yz/
+categories: tikz
+---
+
+I recently gave a status update on my SIDM analysis and showed how we veto cosmic muons in CMS detector.
+Here’s a little cartoon I drew to explain what happens when a cosmic muon passes through the detector.
+
+A cosmic muon often enters the detector from above and travels straight through, where it can be reconstructed as two tracks: one in the top half and one in the bottom half.
+
+<div style="text-align: center;">
+  <img src="https://res.cloudinary.com/lhag0wwj/image/upload/v1791132139/Cosmic_yz.png"
+       alt="Cosmic muon detector diagram"
+       width="700">
+</div>
+This drawing is inspired by the Karri DiPetrillo's drawing (will add the link soon).
+Also, stay tuned for the diagram in $x-y$ coordinates
+
+Here is the code to compile in Latex
+
+<details>
+<summary>View LaTeX/TikZ code</summary>
+
+<div class="code-container">
+<button class="copy-button" onclick="copyCode(this)">Copy</button>
+
+<pre><code>
+\documentclass[border=20pt,12pt]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\begin{document}
+\begin{tikzpicture}
+
+\coordinate (O) at (0,0); 
+\fill[cyan!10]  (-5,3)rectangle (5, -3);
+\fill[white]  (-4.1,2.1)rectangle (4.1, -2.1);
+\fill[green!18]  (-4,2)rectangle (4, -2);
+\fill[white]  (-3.1,1.1)rectangle (3.1, -1.1);
+\fill[green!12]  (-3,1)rectangle (3, -1);
+\draw[white,line width=5pt](-4,3) -- (-4, -3);
+\draw[white,line width=5pt](4,3) -- (4, -3);
+\draw[white,line width=5pt](-3,2) -- (-3, -2);
+\draw[white,line width=5pt](3,2) -- (3, -2);
+\draw[white,line width=5pt](-5,0) -- (5, 0);
+
+\fill[gray!80]  (-5.2,3.6)rectangle (-0.2, 3.3);
+\fill[gray!80]  (5.2,3.6)rectangle (0.2, 3.3);
+\fill[gray!80]  (-5.2,-3.6)rectangle (-0.2, -3.3);
+\fill[gray!80]  (5.2,-3.6)rectangle (0.2, -3.3);
+
+\fill[gray!80]  (-5.3,3.8)rectangle (-5.7, 0.3);
+\fill[gray!80]  (-5.3,-3.8)rectangle (-5.7, -0.3);
+\fill[gray!80]  (5.3,3.8)rectangle (5.7, 0.3);
+\fill[gray!80]  (5.3,-3.8)rectangle (5.7, -0.3);
+
+\fill[gray!50]  (-6,4.5)rectangle (-0.3, 4.9);
+\fill[gray!50]  (6,4.5)rectangle (0.3, 4.9);
+\fill[gray!50]  (-6,-4.5)rectangle (-0.3, -4.9);
+\fill[gray!50]  (6,-4.5)rectangle (0.3, -4.9);
+
+\fill[gray!30]  (-7,6)rectangle (-0.3, 6.5);
+\fill[gray!30]  (7,6)rectangle (0.3, 6.5);
+\fill[gray!30]  (-7,-6)rectangle (-0.3, -6.5);
+\fill[gray!30]  (7,-6)rectangle (0.3, -6.5);
+
+\fill[gray!50]  (-8,6.6)rectangle (-7.5, 0.5);
+\fill[gray!50]  (-8,-6.6)rectangle (-7.5, -0.5);
+\fill[gray!50]  (8,6.6)rectangle (7.5, 0.5);
+\fill[gray!50]  (8,-6.6)rectangle (7.5, -0.5);
+
+\fill[gray!30]  (-10,6.6)rectangle (-9.4, 0.6);
+\fill[gray!30]  (-10,-6.6)rectangle (-9.4, -0.6);
+\fill[gray!30]  (10,6.6)rectangle (9.4, 0.6);
+\fill[gray!30]  (10,-6.6)rectangle (9.4, -0.6);
+
+\draw[red!75!magenta,
+    line width=2, -{Latex[length=5mm,width=3mm]}](0.45,7)--(-0.05,-7);
+\node[text=red!75!magenta,] at (-2,7) {\Huge Cosmic muon};
+\draw[  ->, >=latex, line width=1.2pt ] (11,-7) -- (12,-7) node[right] {$z$};
+\draw[ ->,>=latex, line width=1.2pt] (11,-7) -- (11,-6) node[above] {$y$};
+\end{tikzpicture}
+
+\end{document}
+
+</code></pre>
+</div>
+
+</details>
+
+*© Maria Jose, 2026*

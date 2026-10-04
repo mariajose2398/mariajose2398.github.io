@@ -10,7 +10,7 @@ I am a graduate student at the University of Virginia working in experimental hi
 This website is my personal space to share a little about my work, travels, photography, hobbies and things I find interesting. 
 
 If you are interested to know more about me, please check [about]({{ "/aboutme/" | relative_url }}) page.
-If you are curious what I do in physics, you can find more about on the  [Research]({{ "/research/" | relative_url }}) page.
+If you are curious what I do in physics, you can find more on the  [Research]({{ "/research/" | relative_url }}) page.
 
 
 ## Latest Posts

@@ -11,10 +11,8 @@ I have also taken some drawings from [TikZ.net](https://tikz.net) and modified t
 
 ## Cosmic Muons in CMS
 
-<div style="text-align: center;">
   <img src="https://res.cloudinary.com/lhag0wwj/image/upload/v1791132139/Cosmic_yz.png"
-       alt="Cosmic muon detector diagram"
-       width="700">
-</div>
+     alt="cosmic yz"
+     style="width: 100%; height: auto;">
 
 [Read the story →]({{ "/tikz/cosmic_yz/" | relative_url }})

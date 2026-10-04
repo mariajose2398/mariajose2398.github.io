@@ -11,11 +11,10 @@ Here’s a little cartoon I drew to explain what happens when a cosmic muon pass
 
 A cosmic muon often enters the detector from above and travels straight through, where it can be reconstructed as two tracks: one in the top half and one in the bottom half.
 
-<div style="text-align: center;">
+
   <img src="https://res.cloudinary.com/lhag0wwj/image/upload/v1791132139/Cosmic_yz.png"
-       alt="Cosmic muon detector diagram"
-       width="700">
-</div>
+     alt="cosmic yz"
+     style="width: 100%; height: auto;">
 This drawing is inspired by the Karri DiPetrillo's drawing (will add the link soon).
 Also, stay tuned for the diagram in $x-y$ coordinates
 

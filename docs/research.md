@@ -36,6 +36,29 @@ The dark photon is very light compared to the dark matter bound state.
 - **Dark photon mass ($m_{Z_d}$):** Consider 0.25, 1.2, and 5 GeV.
 - **Kinetic mixing between $Z_d$ and the SM ($\epsilon$):** Vary $\epsilon$ such that the average transverse decay length ($L_{xy}$) of $Z_d$ ranges from 0.3 to 300 cm.
 
+### Analysis Strategy: Lepton Jets
+<img src="https://res.cloudinary.com/lhag0wwj/image/upload/v1791129593/ljs_new_label.png"
+     alt="SIDM Feynman Diagram"
+     width="60%">
+
+
+We look for **displaced collimated leptons** with the CMS detector! But we don't look for them separately; we look for a single object called a **Lepton Jet (LJ)**.
+
+**Lepton Jet:** A group of collimated leptons in a tight cone.
+
+**What goes into Lepton Jets:** We cluster (using anti-$k_T$) **GSF $e$**, **PF $\gamma$**, **PF $\mu$**, and **DSA $\mu$** to get the LJs.
+
+There are two types of LJs in this search:
+
+- **$e\gamma$:** Consists of electrons and photons ($N_{\mu}=0$).
+- **$\mu$**: Consists of muons ( $N_{\mu}\geq 1$) .
+
+### Final States
+
+In our analysis, we look for two final states:
+
+- **$2\mu2e$:** 1 $e\gamma$-type LJ and 1 $\mu$-type LJ.
+- **$4\mu$:** 2 $\mu$-type LJs.
 ## Barrel Timing Layer for the CMS MIP Timing Detector
 
 For the High Luminosity-LHC, the CMS detector is undergoing a massive upgrade, which involves the addition of an MIP Timing Detector (MTD). 

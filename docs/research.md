@@ -18,8 +18,8 @@ The decays of these dark photons could produce clusters of displaced and collima
 ### SIDM Model at the LHC
 
 <img src="https://res.cloudinary.com/lhag0wwj/image/upload/v1791110256/FeyDia_1.png"
+     style="width: 100%; height: auto;">
      alt="SIDM Feynman Diagram"
-     width="60%">
 
 The dark photon is very light compared to the dark matter bound state.
 
@@ -39,7 +39,7 @@ The dark photon is very light compared to the dark matter bound state.
 ### Analysis Strategy: Lepton Jets
 <img src="https://res.cloudinary.com/lhag0wwj/image/upload/v1791129593/ljs_new_label.png"
      alt="SIDM Feynman Diagram"
-     width="60%">
+     style="width: 100%; height: auto;">
 
 
 We look for **displaced collimated leptons** with the CMS detector! But we don't look for them separately; we look for a single object called a **Lepton Jet (LJ)**.

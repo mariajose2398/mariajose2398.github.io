@@ -4,6 +4,7 @@ title: "A New Beginning"
 date: 2026-10-03 17:00:00 +0200
 permalink: /photography/chicago-2023/
 categories: photography
+last_updated: 2026-10-03
 ---
 
 This is my first post on the website, and I wanted to share my favorite photograph of all time.

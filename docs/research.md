@@ -10,7 +10,7 @@ My PhD advisor is [Prof. Chris Neu](https://www.phys.virginia.edu/People/persona
 
 ## Search for Self-Interacting Dark Matter with the CMS Experiment at the LHC
 
-"Dark matter self-interactions is a fascinating concept that could help explain some of the universe's mysteries, such as the distribution of dark matter near galactic centers. 
+Dark matter self-interactions is a fascinating concept that could help explain some of the universe's mysteries, such as the distribution of dark matter near galactic centers. 
 If such interactions occur in nature, dark matter could form bound states, which might be observable in LHC collisions. 
 In this search for self-interacting dark matter (SIDM), the dark matter particles produced at the LHC form a heavy bound state, which subsequently decays into a pair of boosted, long-lived dark photons. 
 The decays of these dark photons could produce clusters of displaced and collimated leptons, which are reconstructed as "displaced lepton jets".
@@ -18,8 +18,8 @@ The decays of these dark photons could produce clusters of displaced and collima
 ### SIDM Model at the LHC
 
 <img src="https://res.cloudinary.com/lhag0wwj/image/upload/v1791110256/FeyDia_1.png"
-     style="width: 100%; height: auto;">
      alt="SIDM Feynman Diagram"
+     style="width: 100%; height: auto;">
 
 The dark photon is very light compared to the dark matter bound state.
 

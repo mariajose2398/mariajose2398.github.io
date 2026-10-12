@@ -7,11 +7,14 @@ permalink: /photography/
 # Photography
 
 A collection of photographs from my travels, research trips, and everyday life.
+## Bern, 2026 September
+<img src="https://res.cloudinary.com/lhag0wwj/image/upload/v1791810681/DSC_9485.jpg"
+     alt="View Baren park"
+     style="width: 100%; height: auto;">
+[Read the story →]({{ site.baseurl }}/photography/bern-2026/)
 
 ## Chicago, 2023
 <img src="https://res.cloudinary.com/lhag0wwj/image/upload/v1791041514/IMG_0180_Original.jpg"
      alt="Chicago from 360 CHICAGO"
      style="width: 100%; height: auto;">
-
-
 [Read the story →]({{ site.baseurl }}/photography/chicago-2023/)

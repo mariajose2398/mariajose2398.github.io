@@ -9,10 +9,16 @@ When I first started creating posters in LaTeX using TikZ, I found it difficult 
 So, I share here few templates and drawings that I have used and developed over the years using `tikzpicture`.
 I have also taken some drawings from [TikZ.net](https://tikz.net) and modified them to suit my needs. I will share those as well.
 
-## Cosmic Muons in CMS
+## Cosmic Muons in CMS (y-z view)
 
   <img src="https://res.cloudinary.com/lhag0wwj/image/upload/v1791132139/Cosmic_yz.png"
      alt="cosmic yz"
      style="width: 100%; height: auto;">
 
 [Read the story →]({{ "/tikz/cosmic_yz/" | relative_url }})
+
+## Cosmic Muons in CMS (x-y view)
+<img src="https://res.cloudinary.com/lhag0wwj/image/upload/v1791816307/cosmic_yx.png"
+ alt="cosmic yz"
+ style="width: 100%; height: auto;">
+[Read the story →]({{ "/tikz/cosmic_xy/" | relative_url }})

@@ -1,0 +1,69 @@
+---
+layout: post
+title: "Cosmic Muons Passing through CMS (x-y View)"
+date: 2026-10-13 
+permalink: /tikz/cosmic_xy/
+categories: tikz
+last_updated: 2026-10-13
+---
+This is a continuation of my post [here](/tikz/cosmic_yz).
+
+<img src="https://res.cloudinary.com/lhag0wwj/image/upload/v1791816307/cosmic_yx.png"
+ alt="cosmic yz"
+ style="width: 100%; height: auto;">
+This drawing is inspired by the Karri DiPetrillo's drawing (will add the link soon).
+
+Here is the code to compile in Latex
+
+<details>
+<summary>View LaTeX/TikZ code</summary>
+<div class="code-container">
+<button class="copy-button" onclick="copyCode(this)">Copy</button>
+<pre><code>
+\documentclass[border=20pt,12pt]{standalone}
+
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+\coordinate (O) at (0,0);
+\fill[cyan!10] (O) circle (1.35);
+\fill[green!18] (O) circle (0.9);
+\draw[white,line width=2pt](O) circle (0.9);
+\fill[green!12] (O) circle (0.6);
+\draw[white,line width=2pt](O) circle (0.6);
+\fill[white] (O) circle (0.10);
+
+\foreach \a in {0,45,...,315} {
+\fill[gray!80,rotate=\a-10](1.35,-0.32) rectangle(1.5,0.32);}
+\foreach \a in {15,60,105,150,195,240,285,330} {
+\fill[gray!80,rotate=\a](1.55,-0.38)rectangle (1.7,0.38);}
+\foreach \a in {0,45,...,315} {
+\fill[gray!50,rotate=\a -10](2.00,-0.48)rectangle(2.20,0.48);}
+\foreach \a in {15,60,105,150,195,240,285,330} {
+\fill[gray!50,rotate=\a  ](2.25,-0.53)rectangle (2.45,0.53);}
+\foreach \a in {15,60,105,150,195,240,285,330} {
+\fill[gray!30,rotate=\a ](3.,-0.8)rectangle(3.3,0.8);}
+\foreach \a in {0,45,...,315} {
+\fill[gray!30,rotate=\a -10 ](3.4,-0.8)rectangle (3.7,0.8);}
+
+
+\draw[red!75!magenta,
+    line width=1.5pt, -{Latex[length=5mm,width=3mm]}](0.45,4.25)--(-0.05,-4.25);
+\node[text=red!75!magenta,] at (-1,4) {Cosmic muon};
+\node[ font=\large,anchor=west ] at (-4.25,2.65) {$+\phi$};
+\node[ font=\large,anchor=west]at (-4.25,-3.15){$-\phi$};
+\draw[  ->, >=latex, line width=1.2pt ] (2.55,-4.65) -- (3.55,-4.65) node[right] {$x$};
+\draw[ ->,>=latex, line width=1.2pt] (2.55,-4.65) -- (2.55,-3.65) node[above] {$y$};
+\end{tikzpicture}
+
+\end{document}
+</code></pre>
+</div>
+</details>
+
+

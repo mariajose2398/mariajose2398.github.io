@@ -67,3 +67,112 @@ Here is the code to compile in Latex
 </details>
 
 
+<details>
+<summary>View Typst Code</summary>
+<div class="code-container">
+<button class="copy-button" onclick="copyCode(this)">Copy</button>
+<pre><code>
+
+
+#import "@preview/cetz:0.3.4": canvas, draw
+
+#set page(
+  width: auto,
+  height: auto,
+  margin: 20pt,
+)
+
+#set text(size: 12pt)
+
+#canvas({
+  import draw: *
+
+  // Colors
+  let cyan10  = rgb(230, 255, 255)
+  let green18 = rgb(209, 255, 209)
+  let green12 = rgb(224, 255, 224)
+  let white   = rgb(255, 255, 255)
+  let gray80  = rgb(153, 153, 153)
+  let gray50  = rgb(191, 191, 191)
+  let gray30  = rgb(217, 217, 217)
+  let cosmic  = rgb(255, 0, 64)
+
+  // Central detector layers
+  circle((0, 0), radius: 1.35, fill: cyan10, stroke: (paint: cyan10))
+  circle((0, 0), radius: 0.9, fill: green18, stroke: (paint: green18))
+  circle((0, 0), radius: 0.9, stroke: (paint: white, thickness: 2pt))
+  circle((0, 0), radius: 0.6, fill: green12, stroke: (paint: green12))
+  circle((0, 0), radius: 0.6, stroke: (paint: white, thickness: 2pt))
+  circle((0, 0), radius: 0.1, fill: white, stroke:(paint:white))
+
+// First layer of detector elements
+for a in range(0, 360, step: 45) {
+  group({
+    rotate((a -10) * 1deg)
+    rect((1.35, -0.32), (1.5, 0.32), fill: gray80, stroke:(paint:gray80))
+  })
+}
+
+for a in range(15, 360, step: 45) {
+  group({
+    rotate(a * 1deg)
+    rect((1.55, -0.38), (1.7, 0.38), fill: gray80, stroke:(paint:gray80))
+  })
+}
+
+
+for a in range(0, 360, step: 45) {
+  group({
+    rotate((a -10) * 1deg)
+    rect((2.0, -0.48), (2.20, 0.48), fill: gray50, stroke:(paint:gray50))
+  })
+}
+
+for a in range(15, 360, step: 45) {
+  group({
+    rotate(a * 1deg)
+    rect((2.25, -0.53), (2.45, 0.53), fill: gray50, stroke:(paint:gray50))
+  })
+}
+
+for a in range(0, 360, step: 45) {
+  group({
+    rotate((a -10) * 1deg)
+    rect((3.0, -0.8), (3.3, 0.8), fill: gray50, stroke:(paint:gray50))
+  })
+}
+
+for a in range(15, 360, step: 45) {
+  group({
+    rotate(a * 1deg)
+    rect((3.4, -0.9), (3.7, 0.9), fill: gray50, stroke:(paint:gray50))
+  })
+}
+
+  // Cosmic muon trajectory
+  line( (0.45, 4.25), (-0.05, -4.25), stroke: (paint: cosmic, thickness: 1.5pt), 
+  mark: (end: "stealth"),
+  )
+
+  content( (-1, 4), text(fill: cosmic)[Cosmic muon],)
+
+  // Azimuthal angle labels
+  content((-4.25, 2.65), [+$phi$])
+  content((-4.25, -3.15), [-$phi$])
+
+  // // X-axis
+  line((2.55, -4.65),(3.55, -4.65), stroke: (thickness: 1.2pt),
+    mark: (end: "stealth"),
+  )
+  content((3.65, -4.65), [$x$])
+
+  // Y-axis
+  line( (2.55, -4.65),(2.55, -3.65),stroke: (thickness: 1.2pt), mark: (end: "stealth"),
+  )
+  content((2.55, -3.5), [$y$])
+})
+
+
+</code></pre>
+</div>
+</details>
